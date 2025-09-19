@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Batchly</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ff9068 0%, #fd746c 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        main {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .support-section {
+            margin-bottom: 3rem;
+        }
+
+        .support-section h2 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ff9068;
+            padding-bottom: 0.5rem;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #007AFF;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .contact-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .contact-link {
+            display: inline-block;
+            background: #007AFF;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .contact-link:hover {
+            background: #0056CC;
+        }
+
+        .troubleshooting ol {
+            margin-left: 1.5rem;
+        }
+
+        .troubleshooting li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            main {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">🐝 Batchly</a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Support & Help</h1>
+        <p class="intro">Get help with Batchly and learn how to make the most of your batch image processing experience.</p>
+
+        <section class="support-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I select multiple images for batch processing?</div>
+                <div class="faq-answer">Use the image picker in Batchly to select multiple photos from your photo library. Simply tap on multiple images to select them for batch processing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I save my editing workflows for future use?</div>
+                <div class="faq-answer">Yes! Batchly allows you to save sequences of operations as reusable workflows. After creating a workflow, you can apply it to new image batches with just a few taps.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What image formats does Batchly support?</div>
+                <div class="faq-answer">Batchly supports JPEG, PNG, HEIC, and TIFF formats. You can convert between these formats and adjust quality settings during export.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I export processed images?</div>
+                <div class="faq-answer">After processing your images, you can export them to your photo library or Files app. Batchly also supports custom naming conventions for organized file management.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I preview changes before applying them to all images?</div>
+                <div class="faq-answer">Absolutely! Batchly provides live previews of your operations so you can see exactly how your images will look before processing the entire batch.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What iOS version is required?</div>
+                <div class="faq-answer">Batchly requires iOS 18.2 or later for optimal performance and access to the latest image processing features.</div>
+            </div>
+        </section>
+
+        <section class="support-section troubleshooting">
+            <h2>Troubleshooting</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">App crashes or freezes during processing</div>
+                <div class="faq-answer">
+                    <ol>
+                        <li>Ensure you have sufficient storage space on your device</li>
+                        <li>Close other apps to free up memory</li>
+                        <li>Try processing fewer images at once</li>
+                        <li>Restart the app and try again</li>
+                        <li>Update to the latest version of iOS and Batchly</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Images not appearing in the picker</div>
+                <div class="faq-answer">
+                    <ol>
+                        <li>Check that you've granted photo library access permissions</li>
+                        <li>Go to Settings > Privacy & Security > Photos > Batchly and ensure access is enabled</li>
+                        <li>Restart the app after changing permissions</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Export failed or images not saving</div>
+                <div class="faq-answer">
+                    <ol>
+                        <li>Check available storage space</li>
+                        <li>Verify photo library write permissions</li>
+                        <li>Try exporting to Files app instead</li>
+                        <li>Reduce export quality if images are very large</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>Send us your questions, feedback, or bug reports via email.</p>
+                    <a href="mailto:harmonyastroapp@gmail.com" class="contact-link">Send Email</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🐛</div>
+                    <h3>Report a Bug</h3>
+                    <p>Found a bug? Help us improve Batchly by reporting issues.</p>
+                    <a href="mailto:harmonyastroapp@gmail.com" class="contact-link">Report Bug</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">💡</div>
+                    <h3>Feature Requests</h3>
+                    <p>Have an idea for a new feature? We'd love to hear from you!</p>
+                    <a href="mailto:harmonyastroapp@gmail.com" class="contact-link">Suggest Feature</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <h2>Tips & Best Practices</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Optimize performance for large batches</div>
+                <div class="faq-answer">For best performance when processing many images, consider processing in smaller batches of 20-50 images. This ensures smooth operation and prevents memory issues.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Organize your workflows</div>
+                <div class="faq-answer">Give your saved workflows descriptive names like "Social Media Square" or "Print Ready" to easily identify them for future use.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Backup important images</div>
+                <div class="faq-answer">Always keep backups of your original images before batch processing, especially when applying destructive edits like cropping or format conversion.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 Batchly. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
