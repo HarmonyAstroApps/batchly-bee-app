@@ -1,0 +1,44 @@
+# Batchly – Batch Photo Editor
+> iOS app for bulk photo editing: resize, watermark, compress hundreds of images at once.
+
+## Overview
+Batchly is a free iOS app that lets you edit large collections of photos in a single operation instead of one at a time. It handles resizing, watermarking, compression, format conversion, cropping, and basic image adjustments across hundreds of images simultaneously. All processing happens on-device with no internet connection required.
+
+## Key Features
+- Bulk resize by pixel dimensions, percentage, or platform presets (Instagram, Etsy, eBay)
+- Batch watermark with pixel-perfect positioning and customization
+- Format conversion and compression: HEIC, JPEG, PNG, TIFF, WebP
+- Smart crop with aspect ratio control
+- Mass image adjustments: brightness, contrast, exposure
+- Reusable recipes for saving and repeating common editing workflows
+- Fully offline — no data leaves the device
+
+## Who It's For
+- Etsy sellers resizing and watermarking product photos
+- Poshmark and eBay sellers preparing listing images
+- Photographers processing large shoots
+- Content creators optimizing images for social media
+- Social media managers preparing assets at platform-specific dimensions
+- Anyone who regularly edits the same types of images in volume
+
+## Supported Formats
+- HEIC
+- JPEG
+- PNG
+- TIFF
+- WebP
+
+## Platform
+- iOS (iPhone & iPad)
+- Price: Free
+- Requires: iOS 16+
+
+## Links
+- App Store: https://apps.apple.com/us/app/batch-photo-editor-batchly/id6751959442
+- Website: https://harmonyastroapps.github.io/batchly-bee-app/
+- Privacy Policy: https://harmonyastroapps.github.io/batchly-bee-app/privacy.html
+- Support: https://harmonyastroapps.github.io/batchly-bee-app/support.html
+
+## Developer
+HarmonyAstroApps — indie iOS developer
+Contact: harmonyastroapp@gmail.com
